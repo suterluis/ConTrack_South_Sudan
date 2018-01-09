@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report Version="2.0" Name="Convoy Partners" Layer="False" TOCField="" DatasetMode="0" StartingPageNumber="1">
+	<DataSource Name="coord_stats" BrowseName="coord_stats" Type="10" FullName="">
+		<Workspace WorkspaceType="1" PathName="E:\ArcGIS_Data\South_Sudan\ConTrack_Code.gdb">
+			<Property Name="DATABASE" Value="E:\ArcGIS_Data\South_Sudan\ConTrack_Code.gdb" />
+		</Workspace>
+	</DataSource>
+	<SourceFields>
+		<Field Name="OBJECTID" SafeName="OBJECTID" Type="6" SortAsc="True" />
+		<Field Name="User" SafeName="User" Type="4" SortAsc="True" />
+		<Field Name="FREQUENCY" SafeName="FREQUENCY" Type="1" SortAsc="True" />
+		<Field Name="COUNT_OBJECTID" SafeName="COUNT_OBJECTID" Type="1" SortAsc="True" />
+	</SourceFields>
+	<ReportFields>
+		<Field Name="User" />
+		<Field Name="COUNT_OBJECTID" />
+	</ReportFields>
+	<ReportStyle Name="San Jose" UserStyle="False">
+		<SectionStyle Type="0" BackColor="#2DA2BF">
+			<Font Size="20" Style="Regular" Color="#282828">Eras Medium ITC</Font>
+		</SectionStyle>
+		<SectionStyle Type="1" BackColor="#282828">
+			<Font Size="9" Style="Regular" Color="#EEEEEE">Eras Medium ITC</Font>
+		</SectionStyle>
+		<SectionStyle Type="2">
+			<Font Size="9" Style="Bold" Color="#576793">Eras Medium ITC</Font>
+		</SectionStyle>
+		<DetailSectionStyle Type="3">
+			<Font Size="9" Style="Regular" Color="#282828">Eras Medium ITC</Font>
+		</DetailSectionStyle>
+		<SectionStyle Type="4">
+			<Font Size="8" Style="Regular" Color="#2DA2BF">Eras Medium ITC</Font>
+		</SectionStyle>
+		<SectionStyle Type="5">
+			<Font Size="8" Style="Regular" Color="#2DA2BF">Eras Medium ITC</Font>
+		</SectionStyle>
+		<SectionStyle Type="6">
+			<Font Size="8" Style="Regular" Color="#576793">Eras Medium ITC</Font>
+		</SectionStyle>
+	</ReportStyle>
+	<ActiveReportsLayout Version="3.1" PrintWidth="4308" DocumentName="ARNet Document" ScriptLang="C#" MasterReport="0">
+		<StyleSheet>
+			<Style Name="Normal" Value="font-family: Arial; font-style: normal; text-decoration: none; font-weight: normal; font-size: 10pt; color: Black; " />
+			<Style Name="Heading1" Value="font-size: 16pt; font-weight: bold; " />
+			<Style Name="Heading2" Value="font-family: Times New Roman; font-size: 14pt; font-weight: bold; font-style: italic; " />
+			<Style Name="Heading3" Value="font-size: 13pt; font-weight: bold; " />
+		</StyleSheet>
+		<Sections>
+			<Section Type="ReportHeader" Name="ReportHeader" Height="924" BackStyle="1" BackColor="12558893">
+				<Control Type="AR.Label" Name="lblReportTitle" Left="0" Top="72" Width="5320" Height="780" Caption="Convoy Partners" Style="color: #282828; background-color: #2DA2BF; font-size: 20pt; font-family: Eras Medium ITC; vertical-align: middle; " />
+			</Section>
+			<Section Type="PageHeader" Name="pageHeader" Height="360" BackStyle="1" BackColor="2631720">
+				<Control Type="AR.Label" Name="lblUser" Left="0" Top="0" Width="2320" Height="360" Caption="User" Style="color: #EEEEEE; background-color: #282828; font-size: 14pt; font-family: Eras Medium ITC; white-space: nowrap; " />
+				<Control Type="AR.Label" Name="lblCOUNT_OBJECTID" Left="2321.44" Top="0" Width="1600" Height="360" Caption="COUNT_OBJECTID" Style="color: #EEEEEE; background-color: #282828; font-size: 14pt; font-family: Eras Medium ITC; white-space: nowrap; " />
+			</Section>
+			<Section Type="Detail" Name="detail" Height="360" BackColor="16777215">
+				<Control Type="AR.Field" Name="txtUser" DataField="User" Left="0" Top="0" Width="2320" Height="360" Text="User" Style="color: #282828; font-size: 12pt; font-family: Eras Medium ITC; " />
+				<Control Type="AR.Field" Name="txtCOUNT_OBJECTID" DataField="COUNT_OBJECTID" Left="2340" Top="0" Width="1600" Height="360" Text="COUNT_OBJECTID" Style="color: #282828; text-align: right; font-size: 12pt; font-family: Eras Medium ITC; " />
+			</Section>
+			<Section Type="PageFooter" Name="pageFooter" Height="299" BackColor="16777215" />
+			<Section Type="ReportFooter" Name="ReportFooter" Height="0" BackColor="16777215" />
+		</Sections>
+		<ReportComponentTray />
+		<PageSettings TopMargin="720" Orientation="1" />
+		<Parameters />
+	</ActiveReportsLayout>
+</Report>
