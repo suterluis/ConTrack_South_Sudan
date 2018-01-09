@@ -21,7 +21,7 @@ arcpy.CopyFeatures_management(AccessConstraint, AC_Backup)
 #make layer from feature class
 arcpy.MakeFeatureLayer_management(AccessConstraint, "AC_lyr")
 
-print "Extracting primary roads."
+print "Extracting roads."
 
 #extract the main roads
 query = ' "CLASS" = \'Primary\' OR "CLASS" = \'Secondary\' OR "CLASS" = \'Tertiary\' OR "CLASS" = \'Local/Urban\' '
